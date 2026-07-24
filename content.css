@@ -1,0 +1,63 @@
+.translationCard {
+    position: absolute;
+    z-index: 2147483647;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 12px 14px;
+    width: 280px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.translationCard .original {
+    font-weight: 600;
+    margin-bottom: 4px;
+    word-break: break-word;
+    color: #2B3349
+}
+
+.translationCard .arrow {
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.translationCard .translated {
+    margin-bottom: 10px;
+    word-break: break-word;
+    color: #2B3349
+}
+
+.translationCard .actions {
+    display: flex;
+    gap: 8px;
+}
+
+.translationCard .actions button {
+    flex: 1;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.translationCard .export {
+    background: #3A4460;
+    color: #f1f5f9;
+}
+
+.translationCard .export:hover {
+    background: #2B3349;
+}
+
+.translationCard .close {
+    background: #eee;
+    color: #333;
+}
+
+.translationCard .close:hover {
+    background: #ddd;
+}

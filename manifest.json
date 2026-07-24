@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "Noted | Highlight, Translate -> Anki",
+    "version": "1.1",
+    "description": "Select text on a page to translate it, then export to anki as a flashcard",
+    "icons": {
+        "96": "icon/icon.png"
+    },
+    "permissions": ["storage", "activeTab"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "host_permissions": [
+        "https://translate.googleapis.com/*",
+        "http://localhost:8765/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ],
+    "browser_specific_settings": {
+    "gecko": {
+        "id": "{654b5a9a-3be5-4dbb-993d-c90f98f0d27a}",
+        "data_collection_permissions": {
+        "required": [
+            "none"
+        ]
+        }
+    }
+    }
+}
